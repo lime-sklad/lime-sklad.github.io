@@ -211,7 +211,7 @@ section {
     padding-left: 10px;
 }
 
-.fs_block_hdr>span {
+.fs_block_hdr>h1 {
     font-size: 55px;
     font-weight: 700;
     color: #fff;
