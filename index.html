@@ -21,7 +21,13 @@
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
-    </script>	
+    </script>
+	<script type="text/javascript">
+	$('#gform').on('submit', function(e) {
+	  $('#gform *').fadeOut(2000);
+	  $('#gform').prepend('Your submission has been processed...');
+	  });
+	</script>    
 </head>
 <body>
 	<header class="header">
@@ -112,26 +118,27 @@
 				</div>
 				<div class="contact_form_box">
 					<div class="contact_form_wpr_box">
-						<form method="POST" action="" id="" class="">
+						<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSd7s5JkgClhs0eZ0JR5zU3MMRQwpO3xO07KrTSHhGSBCvnyyA/formResponse" target="_self" method="POST" id="mG61Hd">
 							<div class="contact_form">
 								<h1>Bizimlə əlaqə</h1>
 								<div class="contact_from_list">
-									<input type="text" name="name" id="name" class="contact_input" required="required" placeholder="Ad">
+									<input type="text" name="entry.1973949212" id="entry.1973949212" class="contact_input" required="required" placeholder="Ad">
 								</div>
 								<div class="contact_from_list">
-									<input type="text" name="sname" id="sname" class="contact_input" required="required" placeholder="Soyad">
+									<input type="text" name="entry.2005620554" id="entry.2005620554" class="contact_input" required="required" placeholder="Soyad">
 								</div>
 								<div class="contact_from_list">
-									<input type="tel" name="tel" id="tel" class="contact_input" required="required" placeholder="Tel">
+									<input type="tel" name="entry.277484263" id="entry.277484263" class="contact_input" required="required" placeholder="Tel">
 								</div>																	
 								<div class="contact_from_list">
-									<textarea name="msg" id="msg" class="contact_input" required="required" placeholder="Mesaj(Bir şey əlavə etmək istəyirsinizsə - burada yazın)" style="height: 145px; width: 100%; resize: none;"></textarea>
+									<textarea name="entry.691582310" id="entry.691582310" class="contact_input" required="required" placeholder="Mesaj(Bir şey əlavə etmək istəyirsinizsə - burada yazın)" style="height: 145px; width: 100%; resize: none;"></textarea>
 								</div>
 								<div class="contact_form_list_submit_btn_box">
 									<button class="submit_form" name="submit_form" type="submit" id>Göndərin</button>
 								</div>								
 							</div>
 						</form>
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>						
 					</div>
 					<div class="contact_form_info" style="display: none;">
 						<p>Bizimlə <a href="tel:+994 50 21 36 35">+994 50 21 36 35</a>-də əlaqə saxlaya bilərsiniz</p>
