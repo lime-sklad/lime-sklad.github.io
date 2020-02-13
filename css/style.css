@@ -411,7 +411,7 @@ form {
     width: 100%;
 }
 
-button.submit_form {
+.submit_form {
     display: block;
     float: right;
     width: 100%;
