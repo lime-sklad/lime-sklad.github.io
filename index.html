@@ -26,7 +26,7 @@
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
   $('#gform *').fadeOut(2000);
-  $('#gform').prepend('Your submission has been processed...');
+  $('.form_succes_overlay').fadeIn().attr("style", "display: flex;");
   });
 </script>
 </head>
@@ -139,10 +139,9 @@ $('#gform').on('submit', function(e) {
 								</div>								
 							</div>
 						</form>
-						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>						
-					</div>
-					<div class="contact_form_info" style="display: none;">
-						<p>Bizimlə <a href="tel:+994 50 21 36 35">+994 50 21 36 35</a>-də əlaqə saxlaya bilərsiniz</p>
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>	
+
+						<div class="form_succes_overlay"><p>Tətbiq göndərildi. <br> Sizinlə əlaqə saxlayacaqlar</p><img src="img/tick.png"></div>					
 					</div>
 				</div>
 			</div>
