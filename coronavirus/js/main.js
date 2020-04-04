@@ -65,7 +65,6 @@ var url = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/json/';
 function callOtherDomain() {
   if(invocation) {    
     invocation.open('GET', url, true);
-    invocation.onreadystatechange = handler;
     invocation.send(); 
   }
 }
