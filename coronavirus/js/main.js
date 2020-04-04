@@ -28,7 +28,9 @@ $(document).ready(function(){
 
 
 
-	$.ajax({				
+	$.ajax({		
+	method: 'GET',
+	headers: { 'something': 'anything' },		
 	url: 'https://cors-anywhere.herokuapp.com/https://opendata.ecdc.europa.eu/covid19/casedistribution/json/',
     crossDomain: true,
     contentType: "application/json",
