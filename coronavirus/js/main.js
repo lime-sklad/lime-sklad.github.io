@@ -29,7 +29,7 @@ $(document).ready(function(){
 
 
 	$.ajax({			
-    headers : { 'Access-Control-Allow-Origin' : '*' },
+    headers : { "Set-Cookie", "HttpOnly;Secure;SameSite=Strict" },
     type: 'POST',			
 	url: 'https://opendata.ecdc.europa.eu/covid19/casedistribution/json/',
     crossDomain: true,
