@@ -70,6 +70,9 @@ function callOtherDomain() {
   }
 }
 
+
+callOtherDomain();
+
 var host = process.env.HOST || 'https://opendata.ecdc.europa.eu/covid19/casedistribution/json/';
 // Listen on a specific port via the PORT environment variable
 var port = process.env.PORT || 8080;
