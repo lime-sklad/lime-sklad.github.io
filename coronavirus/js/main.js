@@ -58,6 +58,18 @@ $(document).ready(function(){
 // 		}
 
 // 	});
+
+var invocation = new XMLHttpRequest();
+var url = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/json/';
+   
+function callOtherDomain() {
+  if(invocation) {    
+    invocation.open('GET', url, true);
+    invocation.onreadystatechange = handler;
+    invocation.send(); 
+  }
+}
+
 var host = process.env.HOST || 'https://opendata.ecdc.europa.eu/covid19/casedistribution/json/';
 // Listen on a specific port via the PORT environment variable
 var port = process.env.PORT || 8080;
