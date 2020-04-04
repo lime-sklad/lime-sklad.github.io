@@ -29,14 +29,14 @@ $(document).ready(function(){
 
 
 	$.ajax({			
-    headers : {"HttpOnly;Secure;SameSite=Strict" },
     type: 'POST',			
 	url: 'https://opendata.ecdc.europa.eu/covid19/casedistribution/json/',
     crossDomain: true,
     contentType: "application/json",
     dataType: 'jsonp',
 	    success: function(data){
-
+data.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
+response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
 		// var year = 'AZE', countriesAndTerritories;
 		// data.records.some(function(el) {
 		//    if (el.geoId == "AF") countriesAndTerritories = el.countriesAndTerritories;
