@@ -28,34 +28,34 @@ $(document).ready(function(){
 
 
 
-	$.ajax({				
-	url: 'https://opendata.ecdc.europa.eu/covid19/casedistribution/json/',
-    crossDomain: true,
-    contentType: "application/json",
-    dataType: 'jsonp',
-	    success: function(data){
-data.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
-response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
-		// var year = 'AZE', countriesAndTerritories;
-		// data.records.some(function(el) {
-		//    if (el.geoId == "AF") countriesAndTerritories = el.countriesAndTerritories;
-		//    return countriesAndTerritories;
-		// })
-		// console.log(countriesAndTerritories);
+// 	$.ajax({				
+// 	url: 'https://opendata.ecdc.europa.eu/covid19/casedistribution/json/',
+//     crossDomain: true,
+//     contentType: "application/json",
+//     dataType: 'jsonp',
+// 	    success: function(data){
+// data.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
+// response.setHeader("Set-Cookie", "HttpOnly;Secure;SameSite=Strict");
+// 		// var year = 'AZE', countriesAndTerritories;
+// 		// data.records.some(function(el) {
+// 		//    if (el.geoId == "AF") countriesAndTerritories = el.countriesAndTerritories;
+// 		//    return countriesAndTerritories;
+// 		// })
+// 		// console.log(countriesAndTerritories);
 
-	 var year = 'AZE', countriesAndTerritories;
-	 data.records.some(function(el) {
-	    if (el.geoId == "AZ") {
-	    	countriesAndTerritories = el.countriesAndTerritories;
-	    	dateRep = el.dateRep;
-	    }
-	    return countriesAndTerritories;
-	 });
-	 console.log(countriesAndTerritories + dateRep);
+// 	 var year = 'AZE', countriesAndTerritories;
+// 	 data.records.some(function(el) {
+// 	    if (el.geoId == "AZ") {
+// 	    	countriesAndTerritories = el.countriesAndTerritories;
+// 	    	dateRep = el.dateRep;
+// 	    }
+// 	    return countriesAndTerritories;
+// 	 });
+// 	 console.log(countriesAndTerritories + dateRep);
 
-		}
+// 		}
 
-	});
+// 	});
 
 
 
