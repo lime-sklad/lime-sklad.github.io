@@ -28,8 +28,7 @@ $(document).ready(function(){
 
 
 
-	$.ajax({			
-    type: 'POST',			
+	$.ajax({				
 	url: 'https://opendata.ecdc.europa.eu/covid19/casedistribution/json/',
     crossDomain: true,
     contentType: "application/json",
