@@ -30,7 +30,7 @@ $(document).ready(function(){
 
 	$.ajax({		
 	method: 'GET',
-	headers: { 'something': 'anything' },		
+	headers: { 'Access-Control-Allow-Origin' : '*'  },		
 	url: 'https://cors-anywhere.herokuapp.com/https://opendata.ecdc.europa.eu/covid19/casedistribution/json/',
     crossDomain: true,
     contentType: "application/json",
